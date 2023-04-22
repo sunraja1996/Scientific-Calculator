@@ -1,0 +1,186 @@
+.calculator {
+  width: 350px;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px #ccc;
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 18px;
+  padding: 15px;
+}
+
+.screen {
+  width: 100%;
+  height: 50px;
+  background-color: #eee;
+  border-radius: 5px 5px 0 0;
+  padding: 10px;
+  box-sizing: border-box;
+  color: #000;
+}
+
+.screen input[type="text"] {
+  width: 100%;
+  height: 100%;
+  font-size: 24px;
+  text-align: right;
+  border: none;
+  background-color: transparent;
+  font-family: "Helvetica Neue", sans-serif;
+  color: #000;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.btn {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: none;
+  background-color: #f2f2f2;
+  color: #000;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.row1 {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+.row1 .btn {
+  background-color: #4CAF50;
+  color: white;
+  border-radius: 50%;
+  font-size: 24px;
+  width: 60px;
+  height: 60px;
+  margin: 5px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+.row1 .btn:hover {
+  background-color: #3e8e41;
+}
+
+.row1 .btn:active {
+  background-color: #1e401f;
+}
+
+
+.btn:hover {
+  background-color: #1e88e5;
+  color: #fff;
+}
+
+.btn:active {
+  background-color: #1565c0;
+  color: #fff;
+}
+
+#clear {
+  background-color: #f44336;
+  color: #fff;
+}
+
+#equals {
+  background-color: #1e88e5;
+  color: #fff;
+}
+
+#plus {
+  background-color: #fdd835;
+}
+
+#minus {
+  background-color: #e65100;
+  color: #fff;
+}
+
+#multiply {
+  background-color: #7cb342;
+  color: #fff;
+}
+
+#divide {
+  background-color: #1a237e;
+  color: #fff;
+}
+
+#power {
+  background-color: #b71c1c;
+  color: #fff;
+}
+
+#sqrt {
+  background-color: #6a1b9a;
+  color: #fff;
+}
+
+#pi {
+  background-color: #00acc1;
+  color: #fff;
+}
+
+#e {
+  background-color: #d81b60;
+  color: #fff;
+}
+
+#sin {
+  background-color: #8e24aa;
+  color: #fff;
+}
+
+#cos {
+  background-color: #1565c0;
+  color: #fff;
+}
+
+#tan {
+  background-color: #2e7d32;
+  color: #fff;
+}
+
+#log {
+  background-color: #c2185b;
+  color: #fff;
+}
+
+#ln {
+  background-color: #3f51b5;
+  color: #fff;
+}
+
+#factorial {
+  background-color: #f44336;
+  color: #fff;
+}
+
+#dot {
+  background-color: #1e88e5;
+  color: #fff;
+}
+
+#abs {
+  background-color: #e65100;
+  color: #fff;
+}
+
+#percent {
+  background-color: #7cb342;
+  color: #fff;
+}
