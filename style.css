@@ -16,10 +16,10 @@ body {
 }
 
 .screen {
-  background-color: #3a3a3a;
-  color: white;
+  background-color: white;
+  color: black;
   font-size: 28px;
-  padding: 20px;
+  padding: 5px;
   text-align: right;
 }
 
@@ -38,16 +38,10 @@ body {
   background-color: #faf21f;
   color: #1a1a1a;
   font-size: 24px;
-  padding: 20px 20px;
   border: none;
   cursor: pointer;
   transition: background-color 0.2s, color 0.2s;
 }
-
-.row1 .btn:hover {
-  background-color: #e5de0c;
-}
-
 
 .btn {
   background-color: #e0e0e0;
