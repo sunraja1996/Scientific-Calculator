@@ -1,76 +1,63 @@
-.calculator {
-  width: 300px;
-  height: auto;
-  margin: auto;
-  border: 1px solid black;
-  border-radius: 10px;
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
   background-color: #f0f0f0;
 }
 
+.calculator {
+  background-color: #d2d5d8;
+  border-radius: 8px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 320px;
+}
+
 .screen {
-  width: 280px;
-  height: 80px;
-  margin: 10px;
-  border: 1px solid black;
-  border-radius: 5px;
-}
-
-#result {
-  width: 260px;
-  height: 60px;
-  margin: 10px;
-  font-size: 30px;
+  background-color: #3a3a3a;
+  color: white;
+  font-size: 28px;
+  padding: 20px;
   text-align: right;
-}
-
-.btn {
-  width: 100px;
-  height:100px;
-  margin: 5px;
-  border: none;
-  border-radius: 50%;
 }
 
 .row {
   display: flex;
-}
-
-.row1 {
-  display: flex;
-}
-
-.btn:last-child {
-    width:280px
-}
-
-.btn:nth-child(4n+4) {
-    background-color:#ff9500
-}
-.btn:nth-child(4n+3) {
-    background-color:#d6d6d6
-}
-.btn:nth-child(4n+2) {
-    background-color:#d6d6d6
-}
-.btn:nth-child(4n+1) {
-    background-color:#d6d6d6
-}
-.btn:nth-child(4n) {
-    background-color:#ff9500
-}
-.btn:nth-child(1) {
-    background-color:#d6d6d6
-}
-.btn:nth-child(2) {
-    background-color:#d6d6d6
-}
-.btn:nth-child(3) {
-    background-color:#ff9500
-}
-.btn:nth-child(32) {
-    background-color:#ff3b30
+  justify-content: space-between;
 }
 
 .btn {
-    font-size:25px
+  background-color: #e0e0e0;
+  border: none;
+  color: #1a1a1a;
+  font-size: 24px;
+  flex: 1;
+  padding: 20px 0;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.btn:hover {
+  background-color: #d1d1d1;
+}
+
+.btn.operator {
+  background-color: #f5923e;
+  color: white;
+}
+
+.btn.operator:hover {
+  background-color: #e88430;
+}
+
+.btn.special {
+  background-color: #5e5e5e;
+  color: white;
+}
+
+.btn.special:hover {
+  background-color: #4e4e4e;
 }
