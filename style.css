@@ -1,239 +1,64 @@
-.calculator {
-  width: 350px;
-  margin: 0 auto;
-  background: linear-gradient(to bottom, #f0f0f0 0%, #d6d6d6 100%);
-  border-radius: 10px;
-  box-shadow: 0px 0px 10px #ccc;
-}
+/* Add this to your style.css file */
 
+.calculator {
+  width: 300px;
+  background-color: #f4f4f4;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+}
 
 .screen {
-  width: calc(100% - 30px);
-  height: calc(25% - 20px);
-  margin: 15px;
-  background-color: #eee;
-  border-radius: 5px;
+  background-color: #222;
+  color: white;
+  border-radius: 8px;
   padding: 10px;
-  box-sizing: border-box;
-}
-
-.screen input[type="text"] {
-  width: calc(100% -20px);
-  height: calc(100% -20px);
-  margin:10px;
-  font-size:24px;
-  text-align:right;
-  border:none;
-  background-color:transparent;
+  text-align: right;
+  margin-bottom: 10px;
 }
 
 .row {
-display:flex;
-justify-content:space-between;
-}
-
-.btn {
-width:calc(25% -10px);
-height:calc(25% -10px);
-border-radius:50%;
-border:none;
-background-color:#f2f2f2;
-color:#000;
-font-size:24px;
-font-weight:bold;
-cursor:pointer;
-transition:background-color .3s ease;
-box-shadow: inset 0px 1px 2px rgba(0,0,0,0.1), inset 0px -1px 1px rgba(255,255,255,0.2);
+  display: flex;
+  justify-content: space-between;
 }
 
 .row1 {
   display: flex;
-  justify-content: center;
-  padding: 10px;
+  justify-content: flex-end;
 }
 
-.row1 .btn {
-  background-color: #4CAF50;
-  color: white;
-  border-radius: 50%;
+.btn {
+  flex: 1;
+  background-color: #e0e0e0;
+  border: 1px solid #ccc;
   font-size: 24px;
-  width: 60px;
-  height: 60px;
-  margin: 5px;
+  padding: 20px 0;
+  text-align: center;
   cursor: pointer;
-  border: none;
-  outline: none;
+  transition: background-color 0.3s;
 }
-
-.row1 .btn:hover {
-  background-color: #3e8e41;
-}
-
-.row1 .btn:active {
-  background-color: #1e401f;
-}
-
 
 .btn:hover {
-  background-color: #1e88e5;
-  color: #fff;
+  background-color: #d0d0d0;
 }
 
-.btn:active {
-  background-color: #1565c0;
-  color: #fff;
+/* Style specific buttons */
+.btn.operator {
+  background-color: #f0a72e;
+  color: white;
 }
 
-#clear {
-background-color:#f44336;
-color:#fff;
-box-shadow: inset 0px 1px 2px rgba(0,0,0,0.2), inset 0px -1px 1px rgba(255,255,255,0.1);
+.btn.operator:hover {
+  background-color: #e09322;
 }
 
-#equals {
-background-color:#1e88e5;
-color:#fff;
-box-shadow: inset 0px 1px 2px rgba(0,0,0,0.2), inset 0px -1px 1px rgba(255,255,255,0.1);
+.btn.special {
+  background-color: #444;
+  color: white;
 }
 
-#plus {
-background-color:#fdd835;
+.btn.special:hover {
+  background-color: #333;
 }
-
-#minus {
-background-color:#e65100;
-color:#fff;
-box-shadow: inset 0px 1px 2px rgba(0,0,0,0.2), inset 0px -1px 1px rgba(255,255,255,0.1);
-}
-
-#multiply {
-background-color:#7cb342;
-color:#fff;
-box-shadow: inset 0px 1px 2px rgba(0,0,0,0.2), inset 0px -1px 1px rgba(255,255,255,0.1);
-}
-
-#divide {
-background-color:#1a237e;
-color:#fff;
-box-shadow: inset 0px 1px 2px rgba(0,0,0,0.2), inset 0px -1px 1px rgba(255,255,255,0.1);
-}
-
-#power {
-background-color:#b71c1c;
-color:#fff;
-box-shadow: inset 0px 1px 2px rgba(0,0,0,0.2), inset 0px -1px 1px rgba(255,255,255,0.1);
-}
-
-#sqrt {
-background-color:#6a1b9a;
-color:#fff;
-box-shadow: inset 0px 1px 2px rgba(0,0,0,0.2), inset 0px -1px 1px rgba(255,255,255,0.1);
-}
-
-#pi {
-background-color:#00acc1;
-color:#fff;
-box-shadow: inset 0px 1px 2px rgba(0,0,0,0.2), inset 0px -1px 1px rgba(255,255,255,0.1);
-}
-
-/* #clear {
-  background-color: #f44336;
-  color: #fff;
-}
-
-#equals {
-  background-color: #1e88e5;
-  color: #fff;
-}
-
-#plus {
-  background-color: #fdd835;
-}
-
-#minus {
-  background-color: #e65100;
-  color: #fff;
-}
-
-#multiply {
-  background-color: #7cb342;
-  color: #fff;
-}
-
-#divide {
-  background-color: #1a237e;
-  color: #fff;
-}
-
-#power {
-  background-color: #b71c1c;
-  color: #fff;
-}
-
-#sqrt {
-  background-color: #6a1b9a;
-  color: #fff;
-}
-
-#pi {
-  background-color: #00acc1;
-  color: #fff;
-}
-
-#e {
-  background-color: #d81b60;
-  color: #fff;
-} */
-
-#sin {
-  background-color: #8e24aa;
-  color: #fff;
-}
-
-#cos {
-  background-color: #1565c0;
-  color: #fff;
-}
-
-#tan {
-  background-color: #2e7d32;
-  color: #fff;
-}
-
-#log {
-  background-color: #c2185b;
-  color: #fff;
-}
-
-#ln {
-  background-color: #3f51b5;
-  color: #fff;
-}
-
-#factorial {
-  background-color: #f44336;
-  color: #fff;
-}
-
-/* #dot {
-  background-color: #1e88e5;
-  color: #fff;
-}
-
-#abs {
-  background-color: #e65100;
-  color: #fff;
-}
-
-#percent {
-  background-color: #7cb342;
-  color: #fff;
-} */
-
-.dot { background-color:#1e88e5; color:#fff; box-shadow: inset 0px 1px 2px rgba(0,0,0,0.2), inset 0px -1px 1px rgba(255,255,255,0.1); }
-
-.abs { background-color:#e65100; color:#fff; box-shadow: inset 0px 1px 2px rgba(0,0,0,0.2), inset 0px -1px 1px rgba(255,255,255,0.1); }
-
-.percent { background-color:#7cb342; color:#fff; box-shadow: inset 0px 1px 2px rgba(0,0,0,0.2), inset 0px -1px 1px rgba(255,255,255,0.1); }
-
-.e { background-color:#d81b60; color:#fff; box-shadow: inset 0px 1px 2px rgba(0,0,0,0.2), inset 0px -1px 1px rgba(255,255,255,0.1); }
