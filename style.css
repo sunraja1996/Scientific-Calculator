@@ -28,6 +28,27 @@ body {
   justify-content: space-between;
 }
 
+.row1 {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 10px;
+}
+
+.row1 .btn {
+  background-color: #faf21f;
+  color: #1a1a1a;
+  font-size: 24px;
+  padding: 20px 20px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.row1 .btn:hover {
+  background-color: #e5de0c;
+}
+
+
 .btn {
   background-color: #e0e0e0;
   border: none;
