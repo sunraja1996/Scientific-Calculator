@@ -21,6 +21,7 @@ body {
   font-size: 24px;
   text-align: right;
   border: none;
+  padding : 5px
   background-color: transparent;
   font-family: "Helvetica Neue", sans-serif;
   color: #000;
@@ -38,7 +39,7 @@ body {
 }
 
 .row1 .btn {
-  background-color: #faf21f;
+  background-color: #FD8D14;
   color: #1a1a1a;
   font-size: 24px;
   border: none;
